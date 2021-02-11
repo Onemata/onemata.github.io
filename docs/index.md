@@ -3,7 +3,7 @@
 We hope you find the following documentation helpful as you work with the Onemata team:
 
 ### Configuring AWS:
-- IAM User
+- [IAM User](configure-aws-iam-user.md)
 - IAM Role
 - S3 Buckets Onemata Delivers Data
 
