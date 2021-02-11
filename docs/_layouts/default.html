@@ -18,7 +18,7 @@
     <header>
       <div class="inner">
         <a href="{{ '/' | absolute_url }}">
-          <h1><img src='https://www.onemata.com/hs-fs/hubfs/Onemata-2020/images/onemata-logo-white.png' width=200 />&nbsp; {{ site.title | default: site.github.repository_name }}</h1>
+          <h1><img src='https://www.onemata.com/hs-fs/hubfs/Onemata-2020/images/onemata-logo-white.png' width=200 />&nbsp;{{ site.title | default: site.github.repository_name }}</h1>
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
         <!--
@@ -38,6 +38,15 @@
         </section>
 
         <aside id="sidebar">
+          <h3>Menu:</h3>
+          <ul>
+            <li>Docs</li>
+            <li>Specs</li>
+            <li>API</li>
+          </ul>
+          <p>&nbsp;</p>
+          <br />
+          <p>Back to <a href='https://www.onemata.com'>Onemata.com &gr;</a></p>
           {% if site.show_downloads %}
             <a href="{{ site.github.zip_url }}" class="button">
               <small>Download</small>
