@@ -1,11 +1,5 @@
 ## Configure AWS IAM User
-> *ONE-SALES-PR-21001*
-
-
-### AWS Documentation Reference: 
-- Creating an IAM user in your AWS account (https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html)
-
-
+`ONE-SALES-PR-21001`
 
 The process of creating a user and enabling that user to perform work tasks consists of the following steps:
 
@@ -138,6 +132,14 @@ aws iam add-user-to-group
 aws iam attach-user-policy
 ```
 6. (Optional) [Give the user permission to manage their own security credentials. For more information, see AWS: Allows MFA-authenticated IAM users to manage their own credentials on the My Security Credentials page.](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_aws_my-sec-creds-self-manage.html)
+
+
+
+### AWS Documentation Reference: 
+- Creating an IAM user in your AWS account (https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html)
+
+
+
 
 
 ### Support or Contact
