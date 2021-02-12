@@ -29,9 +29,9 @@ Please send all AWS ARN's to Onemata to provision access. Feel free to reference
 
 ### Step 3: Receive S3 Bucket URI and Paths
 
-Onemata will provision access to AWS S3 Buckets and provide the S3 URI and path to requested data.
+Onemata will provision access to AWS S3 Buckets and provide the S3 URI and paths.
 
-Generally Onemata uses AWS region `us-west-2` (Oregon) and names S3 Buckets using the following format:
+Generally, Onemata uses AWS region `us-west-2` (Oregon) and names S3 Buckets using the following format:
 
 ```
 s3://**feed-id**.sample.parquet.usw2.onemata.com
