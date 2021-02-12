@@ -55,12 +55,32 @@ Guidance differs depending on the service being used to access the data. If tryi
 
 2. Run `aws s3 ls s3://**feed-id**.sample.usw2.onemata.com/location_country=**ISO 2 letter country code**/output_year=**year**/output_month=**month**/output_day=**day**/ --request-payer requester` to see a list of the given days files for the requested country. 
 
+> **Please note:** Additional AWS IAM Access Policies may be required to access the bucket and paths given by Onemata. Please consult your AWS Administrator to update policies as needed. 
+
 #### Additional examples
 
 Download a given days files for a country: 
 ```
 aws s3 cp s3://**feed-id**.sample.usw2.onemata.com/location_country=**ISO 2 letter country code**/output_year=**year**/output_month=**month**/output_day=**day**/ . --request-payer requester
 ```
+
+Access Policy Example:
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": "arn:aws:s3:::AccountABucketName/*"
+
+        }
+    ]
+}
+```
+Replace **AccountABucketName** with the bucket provided by Onemata. 
 
 
 ![](https://www.onemata.com/hs-fs/hubfs/Logos/Onemata%20Logo%20-%20wide.png)
