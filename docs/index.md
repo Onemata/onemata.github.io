@@ -1,6 +1,8 @@
 ## Welcome to Onemata's Docs
 
-We hope you find the following documentation helpful as you work with the Onemata team.
+We hope you find the following documentation helpful as you work with the Onemata.
+
+![](https://www.onemata.com/hs-fs/hubfs/Onemata-2020/images/shark2.png?width=550&height=489&name=shark2.png)
 
 ### Configuring AWS:
 
