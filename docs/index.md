@@ -2,8 +2,6 @@
 
 We hope you find the following documentation helpful as you work with the Onemata.
 
-![](https://www.onemata.com/hs-fs/hubfs/Onemata-2020/images/shark2.png?width=550&height=489&name=shark2.png)
-
 ### Configuring AWS:
 
 - [IAM User](configure-aws-iam-user.md)
@@ -21,6 +19,9 @@ We hope you find the following documentation helpful as you work with the Onemat
 - [Sample Feeds](access-onemata-sample-feeds.md)
 - [Standard Feeds](access-onemata-standard-feeds.md)
 - [Custom Feeds](access-onemata-custom-feeds.md)
+
+
+![](https://www.onemata.com/hs-fs/hubfs/Onemata-2020/images/shark2.png)
 
 ### Support or Contact
 
