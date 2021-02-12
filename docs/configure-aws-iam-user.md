@@ -7,25 +7,23 @@ The process of creating a user and enabling that user to perform work tasks cons
 
 2. Create credentials for the user, depending on the type of access the user requires:
 
-    - Programmatic access: The IAM user might need to make API calls, use the AWS CLI, or use the Tools for Windows PowerShell. In that case, create an access key (access key ID and a secret access key) for that user.
+    - ***Programmatic access:*** The IAM user might need to make API calls, use the AWS CLI, or use the Tools for Windows PowerShell. In that case, create an access key (access key ID and a secret access key) for that user.
 
-    - AWS Management Console access: If the user needs to access the AWS Management Console, create a password for the user.
+    - ***AWS Management Console access:*** If the user needs to access the AWS Management Console, create a password for the user.
 
     As a best practice, create only the credentials that the user needs. For example, for a user who requires access only through the AWS Management Console, do not create access keys.
 
-Once a user is created then,
-
 3. Give the user permissions to perform the required tasks by adding the user to one or more groups. You can also grant permissions by attaching permissions policies directly to the user. However, we recommend instead that you put your users in groups and manage permissions through policies that are attached to those groups. You can also use a permissions boundary to limit the permissions that a user can have, though this is not common.
 
-4. (Optional) Add metadata to the user by attaching tags. For more information about using tags in IAM, see Tagging IAM resources.
+4. (Optional) Add metadata to the user by attaching tags. For more information about using tags in IAM, see [Tagging IAM resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags.html).
 
-5. Provide the user with the necessary sign-in information. This includes the password and the console URL for the account sign-in page where the user provides those credentials. For more information, see How IAM users sign in to AWS.
+5. Provide the user with the necessary sign-in information. This includes the password and the console URL for the account sign-in page where the user provides those credentials. For more information, see [How IAM users sign in to AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_sign-in.html).
 
-6. (Optional) Configure multi-factor authentication (MFA) for the user. MFA requires the user to provide a one-time-use code each time he or she signs into the AWS Management Console.
+6. (Optional) Configure [multi-factor authentication (MFA)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html) for the user. MFA requires the user to provide a one-time-use code each time he or she signs into the AWS Management Console.
 
-7. (Optional) Give users permissions to manage their own security credentials. (By default, users do not have permissions to manage their own credentials.) For more information, see Permitting IAM users to change their own passwords.
+7. (Optional) Give users permissions to manage their own security credentials. (By default, users do not have permissions to manage their own credentials.) For more information, see [Permitting IAM users to change their own passwords](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_enable-user-change.html).
 
-For information about the permissions that you need in order to create a user, see Permissions required to access IAM resources.
+For information about the permissions that you need in order to create a user, see [Permissions required to access IAM resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_permissions-required.html).
 
 
 ## Creating IAM users (console)
@@ -35,9 +33,9 @@ You can use the AWS Management Console to create IAM users.
 
 1. Sign in to the AWS Management Console and open the IAM console at https://console.aws.amazon.com/iam/.
 
-2. In the navigation pane, choose Users and then choose Add user.
+2. In the navigation pane, choose ***Users*** and then choose ***Add user***.
 
-3. Type the user name for the new user. This is the sign-in name for AWS. If you want to add multiple users, choose Add another user for each additional user and type their user names. You can add up to 10 users at one time.
+3. Type the user name for the new user. This is the sign-in name for AWS. If you want to add multiple users, choose ***Add another user*** for each additional user and type their user names. You can add up to 10 users at one time.
 
 > Note:
 
@@ -45,49 +43,49 @@ You can use the AWS Management Console to create IAM users.
 
 4. Select the type of access this set of users will have. You can select programmatic access, access to the AWS Management Console, or both.
 
-  - Select Programmatic access if the users require access to the API, AWS CLI, or Tools for Windows PowerShell. This creates an access key for each new user. You can view or download the access keys when you get to the Final page.
+  - Select ***Programmatic access*** if the users require access to the API, AWS CLI, or Tools for Windows PowerShell. This creates an access key for each new user. You can view or download the access keys when you get to the ***Final*** page.
 
-    - Select AWS Management Console access if the users require access to the AWS Management Console. This creates a password for each new user.
+    - Select ***AWS Management Console*** access if the users require access to the AWS Management Console. This creates a password for each new user.
 
-    - For Console password, choose one of the following:
+    - For ***Console password***, choose one of the following:
 
       a. **Autogenerated password.** Each user gets a randomly generated password that meets the account password policy. You can view or download the passwords when you get to the Final page.
 
       b. **Custom password.** Each user is assigned the password that you type in the box.
 
-  - (Optional) We recommend that you select Require password reset to ensure that users are forced to change their password the first time they sign in.
+  - (Optional) We recommend that you select ***Require password reset*** to ensure that users are forced to change their password the first time they sign in.
 
 > Note:
 
-> If an administrator has enabled the Allow users to change their own password account password policy setting, then this check box does nothing. Otherwise, it automatically attaches an AWS managed policy named IAMUserChangePassword to the new users. The policy grants them permission to change their own passwords.
+> If an administrator has enabled the ***Allow users to change their own password*** account password policy setting, then this check box does nothing. Otherwise, it automatically attaches an AWS managed policy named IAMUserChangePassword to the new users. The policy grants them permission to change their own passwords.
 
-5. Choose Next: Permissions.
+5. Choose ***Next: Permissions***.
 
-6. On the Set permissions page, specify how you want to assign permissions to this set of new users. Choose one of the following three options:
+6. On the ***Set permissions*** page, specify how you want to assign permissions to this set of new users. Choose one of the following three options:
 
-  - Add user to group. Choose this option if you want to assign the users to one or more groups that already have permissions policies. IAM displays a list of the groups in your account, along with their attached policies. You can select one or more existing groups, or choose Create group to create a new group. For more information, see Changing permissions for an IAM user.
+  - ***Add user to group***. Choose this option if you want to assign the users to one or more groups that already have permissions policies. IAM displays a list of the groups in your account, along with their attached policies. You can select one or more existing groups, or choose ***Create group*** to create a new group. For more information, see Changing permissions for an IAM user.
 
-  - Copy permissions from existing user. Choose this option to copy all of the group memberships, attached managed policies, embedded inline policies, and any existing permissions boundaries from an existing user to the new users. IAM displays a list of the users in your account. Select the one whose permissions most closely match the needs of your new users.
+  - ***Copy permissions from existing user***. Choose this option to copy all of the group memberships, attached managed policies, embedded inline policies, and any existing permissions boundaries from an existing user to the new users. IAM displays a list of the users in your account. Select the one whose permissions most closely match the needs of your new users.
 
-  - Attach existing policies to user directly. Choose this option to see a list of the AWS managed and customer managed policies in your account. Select the policies that you want to attach to the new users or choose Create policy to open a new browser tab and create a new policy from scratch. For more information, see step 4 in the procedure Creating IAM policies (console). After you create the policy, close that tab and return to your original tab to add the policy to the new user. As a best practice, we recommend that you instead attach your policies to a group and then make users members of the appropriate groups.
+  - ***Attach existing policies to user directly***. Choose this option to see a list of the AWS managed and customer managed policies in your account. Select the policies that you want to attach to the new users or choose ***Create policy*** to open a new browser tab and create a new policy from scratch. For more information, see step 4 in the procedure Creating IAM policies (console). After you create the policy, close that tab and return to your original tab to add the policy to the new user. As a best practice, we recommend that you instead attach your policies to a group and then make users members of the appropriate groups.
 
 7. (Optional) Set a permissions boundary. This is an advanced feature.
 
-  - Open the Set permissions boundary section and choose Use a permissions boundary to control the maximum user permissions. IAM displays a list of the AWS managed and customer managed policies in your account. Select the policy to use for the permissions boundary or choose Create policy to open a new browser tab and create a new policy from scratch. For more information, see step 4 in the procedure Creating IAM policies (console). After you create the policy, close that tab and return to your original tab to select the policy to use for the permissions boundary.
+  - Open the ***Set permissions boundary*** section and choose ***Use a permissions boundary to control the maximum user permissions***. IAM displays a list of the AWS managed and customer managed policies in your account. Select the policy to use for the permissions boundary or choose ***Create policy*** to open a new browser tab and create a new policy from scratch. For more information, see step 4 in the procedure Creating IAM policies (console). After you create the policy, close that tab and return to your original tab to select the policy to use for the permissions boundary.
 
-8. Choose Next: Tags.
+8. Choose ***Next: Tags***.
 
 9. (Optional) Add metadata to the user by attaching tags as key-value pairs. For more information about using tags in IAM, see Tagging IAM resources.
 
-10. Choose Next: Review to see all of the choices you made up to this point. When you are ready to proceed, choose Create user.
+10. Choose ***Next: Review*** to see all of the choices you made up to this point. When you are ready to proceed, choose Create user.
 
-11. To view the users' access keys (access key IDs and secret access keys), choose Show next to each password and access key that you want to see. To save the access keys, choose Download .csv and then save the file to a safe location. (Do not share access key information with Onemata.)
+11. To view the users' access keys (access key IDs and secret access keys), choose ***Show*** next to each password and access key that you want to see. To save the access keys, choose ***Download .csv*** and then save the file to a safe location. (Do not share access key information with Onemata.)
 
 > **Important**
 
-> This is your only opportunity to view or download the secret access keys, and you must provide this information to your users before they can use the AWS API. Save the user's new access key ID and secret access key in a safe and secure place. You will not have access to the secret keys again after this step.
+> This is your only opportunity to view or download the secret access keys, and you must provide this information to your users before they can use the AWS API. Save the user's new access key ID and secret access key in a safe and secure place. ***You will not have access to the secret keys again after this step.***
 
-12. Provide each user with his or her credentials. On the final page you can choose Send email next to each user. Your local mail client opens with a draft that you can customize and send. The email template includes the following details to each user:
+12. Provide each user with his or her credentials. On the final page you can choose ***Send email*** next to each user. Your local mail client opens with a draft that you can customize and send. The email template includes the following details to each user:
 
   - User name
 
@@ -98,7 +96,7 @@ You can use the AWS Management Console to create IAM users.
 
 > **Important**
 
-> The user's password is not included in the generated email. You must provide them to the customer in a way that complies with your organization's security guidelines.
+> The user's password is ***not*** included in the generated email. You must provide them to the customer in a way that complies with your organization's security guidelines.
 
 ## Creating IAM users (AWS CLI)
 You can use the AWS CLI to create an IAM user.
@@ -129,7 +127,7 @@ aws iam create-access-key
 ```
 aws iam add-user-to-group
 ```
-5. (Optional) [Attach a policy to the user that defines the user's permissions.](https://docs.aws.amazon.com/cli/latest/reference/iam/attach-user-policy.html) Note: We recommend that you manage user permissions by adding the user to a group and attaching a policy to the group instead of attaching directly to a user.
+5. (Optional) [Attach a policy to the user that defines the user's permissions.](https://docs.aws.amazon.com/cli/latest/reference/iam/attach-user-policy.html) ***Note:*** We recommend that you manage user permissions by adding the user to a group and attaching a policy to the group instead of attaching directly to a user.
 ```
 aws iam attach-user-policy
 ```
