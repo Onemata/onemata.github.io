@@ -45,7 +45,9 @@ s3://**client-id**.custom.usw2.onemata.com
 
 Standard sample feeds have paths similar to: `location_country=**ISO 2 letter country code**/output_year=**year**/output_month=**month**/output_day=**day**/Onemata_**Feed_Type**_**yearmonthday**_**ISO 2 letter country code**_**batch_numbers_underscored**.gz`
 
-Custom feeds are provided matching the client's specifications.
+**Example: /location_country=AE/output_year=2021/output_month=02/output_day=01/Onemata_Mobile_Location_Data_20210201_AE__B0000__1_000.gz**
+
+Custom feed's paths are provided matching the client's specifications.
 
 ### Step 4: Access Data Onemata Provides
 
