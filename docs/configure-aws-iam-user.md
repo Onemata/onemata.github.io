@@ -136,7 +136,7 @@ aws iam attach-user-policy
 
 
 ### AWS Documentation Reference: 
-- Creating an IAM user in your AWS account (https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html)
+- [Creating an IAM user in your AWS account] (https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html)
 
 
 
