@@ -128,12 +128,14 @@ mkdir ~/.aws/
 4.    Within the **~/.aws** folder, use a text editor to create a file. Name the file **config**.
 
 5.    In the file, enter the following text. Replace **profilename** with the name of the role that you attached to the instance. Then, replace **arn:aws:iam::111111111111:role/ROLENAME** with the ARN provided by Onemata.
+
 ```
 [profile profilename]
 role_arn = arn:aws:iam::111111111111:role/ROLENAME
 
 credential_source = Ec2InstanceMetadata
 ```
+
 6.    Save the file.
 
 #### Verify the instance profile
