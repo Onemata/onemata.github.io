@@ -139,7 +139,7 @@ aws iam attach-user-policy
 - [Creating an IAM user in your AWS account](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html)
 
 
-![](https://github.com/Onemata/onemata.github.io/raw/gh-pages/docs/onemata-logo-color.png)
+![](https://www.onemata.com/hs-fs/hubfs/Logos/Onemata%20Logo%20-%20wide.png)
 
 
 ### Support or Contact
