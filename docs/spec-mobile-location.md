@@ -24,7 +24,8 @@ The Onemata Mobile Location Feed is scalable, high-fidelity device location data
 | user\_agent          | This field includes a description of the web user agent details.                                                                                                                                         |
 | ipv\_4               | This field shows the IPv4 Address detected during the event.                                                                                                                                             |
 | ipv\_6               | This field shows the IPv6 Address detected during the event.                                                                                                                                             |
-| publisher            | An ID representing the publisher / app / app bundle                          
+| publisher            | An ID representing the publisher / app / app bundle                          |
+| consent\_string      | IAB CCPA Framework (Framework) / (USP String) or the IAB’s GDPR solution (the Transparency and Consent Framework (TCF) |
 
 ### Example 1
 
