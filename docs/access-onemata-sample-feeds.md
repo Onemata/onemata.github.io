@@ -34,20 +34,20 @@ Onemata will provision access to AWS S3 Buckets and provide the S3 URI and path 
 Generally Onemata uses AWS region `us-west-2` (Oregon) and names S3 Buckets using the following format:
 
 ```
-s3://**feed-id**.sample.usw2.onemata.com
+s3://**feed-id**.sample.parquet.usw2.onemata.com
 ```
 
 or
 
 ```
-s3://**client-id**.custom.usw2.onemata.com
+s3://**client-id**.custom.csv.usw2.onemata.com
 ```
 
-Standard sample feeds have paths similar to: `location_country=**ISO 2 letter country code**/output_year=**year**/output_month=**month**/output_day=**day**/Onemata_**Feed_Type**_**yearmonthday**_**ISO 2 letter country code**_**batch_numbers_underscored**.gz`
+We provide standard sample feeds in Snappy Parquet and Tab delimited CSV files with gzip compression. They have paths similar to: `location_country=**ISO 2 letter country code**/output_year=**year**/output_month=**month**/output_day=**day**/Onemata_**Feed_Type**_**yearmonthday**_**ISO 2 letter country code**_**batch_numbers_underscored**.gz`
 
 **Example: /location_country=AE/output_year=2021/output_month=02/output_day=01/Onemata_Mobile_Location_Data_20210201_AE__B0000__1_000.gz**
 
-Custom feed's paths are provided matching the client's specifications.
+Custom feed's paths and formats are provided matching the client's specifications.
 
 ### Step 4: Access Data Onemata Provides
 
