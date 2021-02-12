@@ -11,7 +11,7 @@ The process of creating a user and enabling that user to perform work tasks cons
 
 - AWS Management Console access: If the user needs to access the AWS Management Console, create a password for the user.
 
-As a best practice, create only the credentials that the user needs. For example, for a user who requires access only through the AWS Management Console, do not create access keys.
+    As a best practice, create only the credentials that the user needs. For example, for a user who requires access only through the AWS Management Console, do not create access keys.
 
 3. Give the user permissions to perform the required tasks by adding the user to one or more groups. You can also grant permissions by attaching permissions policies directly to the user. However, we recommend instead that you put your users in groups and manage permissions through policies that are attached to those groups. You can also use a permissions boundary to limit the permissions that a user can have, though this is not common.
 
