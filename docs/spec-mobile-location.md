@@ -110,6 +110,24 @@ Guidance differs depending on the service being used to access the data. If tryi
 
 > **Please note:** Additional AWS IAM Access Policies may be required to access the bucket and paths given by Onemata. Please consult your AWS Administrator to update policies as needed. 
 
+> Access Policy Example:
+> ```
+> {
+>     "Version": "2012-10-17",
+>     "Statement": [
+>         {
+>             "Effect": "Allow",
+>             "Action": [
+>                 "s3:GetObject"
+>             ],
+>             "Resource": "arn:aws:s3:::AccountABucketName/*"
+> 
+>         }
+>     ]
+> }
+> ```
+Replace **AccountABucketName** with the bucket provided by Onemata. 
+
 
 ![](https://www.onemata.com/hs-fs/hubfs/Logos/Onemata%20Logo%20-%20wide.png)
 
