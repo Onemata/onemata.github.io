@@ -3,7 +3,7 @@
 
 The process of creating a user and enabling that user to perform work tasks consists of the following steps:
 
-1. Create the user in the AWS Management Console, the AWS CLI, or Tools for Windows PowerShell. If you create the user in the AWS Management Console, then steps 1–4 are handled automatically, based on your choices. If you create the users programmatically, then you must perform each of those steps individually.
+1. Create the user in the AWS Management Console, the AWS CLI, or Tools for Windows PowerShell. If you create the user in the AWS Management Console, then some steps are handled automatically, based on your choices. If you create the users programmatically, then you must perform each of those steps individually.
 
 2. Create credentials for the user, depending on the type of access the user requires:
 
@@ -12,6 +12,8 @@ The process of creating a user and enabling that user to perform work tasks cons
     - AWS Management Console access: If the user needs to access the AWS Management Console, create a password for the user.
 
     As a best practice, create only the credentials that the user needs. For example, for a user who requires access only through the AWS Management Console, do not create access keys.
+
+Once a user is created then,
 
 3. Give the user permissions to perform the required tasks by adding the user to one or more groups. You can also grant permissions by attaching permissions policies directly to the user. However, we recommend instead that you put your users in groups and manage permissions through policies that are attached to those groups. You can also use a permissions boundary to limit the permissions that a user can have, though this is not common.
 
