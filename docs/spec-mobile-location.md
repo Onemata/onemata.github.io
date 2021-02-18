@@ -33,7 +33,7 @@ The Onemata Mobile Location Feed is scalable, high-fidelity device location data
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | mobile\_ad\_id       | 188CF95F-6AD6-4394-AB09-68B7B61B1829                                                                                                 |
 | mobile\_ad\_id\_type | AAID                                                                                                                                 |
-| utc\_timestamp       | 1604959920                                                                                                                           |
+| utc\_timestamp       | 2021-02-15 13:11:00                                                                                                                           |
 | country              | IT                                                                                                                                   |
 | latitude             | 41.902782                                                                                                                            |
 | longitude            | 12.496366                                                                                                                            |
@@ -55,7 +55,7 @@ The Onemata Mobile Location Feed is scalable, high-fidelity device location data
 | -------------------- | ----------------------------------------- |
 | mobile\_ad\_id       | 4D42B86E-44BA-4DE6-B9EC-FE18774A2DFA      |
 | mobile\_ad\_id\_type | IDFA                                      |
-| utc\_timestamp       | 1604965286                                |
+| utc\_timestamp       | 2021-02-10 01:13:00                       |
 | country              | GB                                        |
 | latitude             | 53.483959                                 |
 | longitude            | \-2.244644                                |
