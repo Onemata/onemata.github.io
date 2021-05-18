@@ -1,9 +1,9 @@
 ## Mobile Location Data Feed
-`ONE-SALES-JA-21001` Updated: 2021-Feb-10
+`ONE-SALES-JA-21001` Updated: 2021-May-17
 
 ### Overview
 
-The Onemata Mobile Location Feed is scalable, high-fidelity device location data. With mobile location data you can gain a competitive advantage by understanding robust real world movement data that resolves devices to audiences. Device identifier and type is combined daily with latitude, longitude and timestamp to provide real world human movement. Depending on the methodology various levels of accuracy are reported. Additional data that is included when available is: Device OS, User Agent, IP Address (v4 and v6), direction, and speed. 
+The Onemata Mobile Location Feed is scalable, high-fidelity device location data. With mobile location data you can gain a competitive advantage by understanding robust real world movement data that resolves devices to audiences. Device identifier and type is combined at least hourly with latitude, longitude and timestamp to provide real world human movement. Depending on the methodology various levels of accuracy are reported. Additional data that is included when available is: Device OS, User Agent, IP Address (v4 and v6), direction, and speed. 
 
 ### Column Descriptions
 
@@ -78,7 +78,7 @@ The Onemata Mobile Location Feed is scalable, high-fidelity device location data
 | USA     | 5 million DAU     | 1 GiB         | Snappy  | Tab Delim Gzip |
 | Other   | 1 million DAU     | 1 GiB         | Snappy  | Tab Delim Gzip |
 
-- Available daily on Amazon Web Services (AWS) Simple Storage Service (S3) around 2AM Eastern Timezone USA
+- Downloading from Onemata requires the requester to pay network traffic/trasfer costs
 
 Onemata will provision access to AWS S3 Buckets and provide the S3 URI and paths.
 
@@ -131,6 +131,9 @@ Replace **AccountABucketName** with the bucket provided by Onemata.
 
 ![](https://www.onemata.com/hs-fs/hubfs/Logos/Onemata%20Logo%20-%20wide.png)
 
+### Onemata Standard Feed Buckets
+1. s3://mobilelocationfeed.parquet.usw2.onemata.com/ Parquet version located in us-west-2
+2. s3://mobilelocationfeed.csv.usw2.onemata.com/ Tab delimited version located in us-west-2
 
 ### Support or Contact
 
