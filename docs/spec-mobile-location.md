@@ -7,25 +7,25 @@ The Onemata Mobile Location Feed is scalable, high-fidelity device location data
 
 ### Column Descriptions
 
-| Column Name          | Description                                                                                                                                                                                              |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| mobile\_ad\_id       | Mobile Advertising ID                                                                                                                                                                                    |
-| mobile\_ad\_id\_type | Android platform identifies as AAID and Apple platform as IDFA                                                                                                                                           |
-| utc\_timestamp       | This field includes the UTC timestamp reported when the device location was observed.                                                                                                                    |
-| country              | This field shows the two character country in which the event occurred.                                                                                                                                  |
-| latitude             | When reported with the observation the latitude in decimal degrees (DD) geographic coordinates. Positive latitudes are north of the equator, negative latitudes are south of the equator.                |
-| longitude            | When reported with the observation the longitude in decimal degrees (DD) geographic coordinates. Positive longitudes are east of the Prime Meridian; negative longitudes are west of the Prime Meridian. |
-| horizontal\_accuracy | This field shows the horizontal accuracy associated with the GPS location of the mobile device in meters.                                                                                                |
-| heading              | This field shows the decimal degrees from north, clockwise 0 to 360 degrees.                                                                                                                             |
-| speed                | This field shows the speed of movement in meters/second based on GPS signal detected during the event.                                                                                                   |
-| altitude             | Altitude associated with the GPS location of the mobile device in meters                                                                                                                                 |
-| vertical\_accuracy   | Vertical accuracy associated with the GPS location of the mobile device in meters.                                                                                                                       |
-| device\_os           | Represents the device operating system and version when available.                                                                                                                                       |
-| user\_agent          | This field includes a description of the web user agent details.                                                                                                                                         |
-| ipv\_4               | This field shows the IPv4 Address detected during the event.                                                                                                                                             |
-| ipv\_6               | This field shows the IPv6 Address detected during the event.                                                                                                                                             |
-| publisher            | An ID representing the publisher / app / app bundle                          |
-| consent\_string      | IAB CCPA Framework (Framework) / (USP String) or the IAB’s GDPR solution (the Transparency and Consent Framework (TCF) |
+| Column Name          | dtype | Description                                                                                                                                                                                              |
+| -------------------- | ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| mobile\_ad\_id       | str | Mobile Advertising ID                                                                                                                                                                                    |
+| mobile\_ad\_id\_type | str | Android platform identifies as AAID and Apple platform as IDFA                                                                                                                                           |
+| utc\_timestamp       | datetime | This field includes the UTC timestamp reported when the device location was observed.                                                                                                                    |
+| country              | str | This field shows the two character country in which the event occurred.                                                                                                                                  |
+| latitude             | float | When reported with the observation the latitude in decimal degrees (DD) geographic coordinates. Positive latitudes are north of the equator, negative latitudes are south of the equator.                |
+| longitude            | float | When reported with the observation the longitude in decimal degrees (DD) geographic coordinates. Positive longitudes are east of the Prime Meridian; negative longitudes are west of the Prime Meridian. |
+| horizontal\_accuracy | float | This field shows the horizontal accuracy associated with the GPS location of the mobile device in meters.                                                                                                |
+| heading              | float | This field shows the decimal degrees from north, clockwise 0 to 360 degrees.                                                                                                                             |
+| speed                | float | This field shows the speed of movement in meters/second based on GPS signal detected during the event.                                                                                                   |
+| altitude             | float | Altitude associated with the GPS location of the mobile device in meters                                                                                                                                 |
+| vertical\_accuracy   | float | Vertical accuracy associated with the GPS location of the mobile device in meters.                                                                                                                       |
+| device\_os           | str | Represents the device operating system and version when available.                                                                                                                                       |
+| user\_agent          | str | This field includes a description of the web user agent details.                                                                                                                                         |
+| ipv\_4               | str | This field shows the IPv4 Address detected during the event.                                                                                                                                             |
+| ipv\_6               | str | This field shows the IPv6 Address detected during the event.                                                                                                                                             |
+| publisher            | str | An ID representing the publisher / app / app bundle                          |
+| consent\_string      | str | IAB CCPA Framework (Framework) / (USP String) or the IAB’s GDPR solution (the Transparency and Consent Framework (TCF) |
 
 ### Example 1
 
